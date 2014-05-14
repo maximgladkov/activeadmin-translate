@@ -19,7 +19,7 @@ module ActiveAdmin
             end
             td do
               ::I18n.with_locale locale do
-                content_for(block || attr)
+                content_for(record, block || attr)
               end
             end
           end
